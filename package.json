@@ -28,7 +28,7 @@
     "jshint-stylish": "~0.1.5",
     "load-grunt-tasks": "~0.3.0"
   },
-  "dependecies": {
+  "dependencies": {
     "which": "~1.0.5",
     "win-spawn": "~2.0.0"
   },
