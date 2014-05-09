@@ -33,20 +33,9 @@ module.exports = function (grunt) {
 
     // Configuration to be run (and then tested).
     hologram: {
-      default_options: {
+      generate: {
         options: {
-        },
-        files: {
-          'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123']
-        }
-      },
-      custom_options: {
-        options: {
-          separator: ': ',
-          punctuation: ' !!!'
-        },
-        files: {
-          'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123']
+          config: 'test/hologram_config.yml'
         }
       }
     },
