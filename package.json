@@ -1,6 +1,6 @@
 {
   "name": "grunt-hologram",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generate Hologram style guides with Grunt",
   "repository": "git@github.com:jchild3rs/grunt-hologram.git",
   "author": {
