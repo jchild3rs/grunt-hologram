@@ -1,6 +1,6 @@
 {
   "name": "grunt-hologram",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Generate Hologram style guides with Grunt",
   "repository": "git@github.com:jchild3rs/grunt-hologram.git",
   "author": {
@@ -26,7 +26,9 @@
     "grunt-contrib-nodeunit": "~0.3.0",
     "grunt": "~0.4.2",
     "jshint-stylish": "~0.1.5",
-    "load-grunt-tasks": "~0.3.0",
+    "load-grunt-tasks": "~0.3.0"
+  },
+  "dependecies": {
     "which": "~1.0.5",
     "win-spawn": "~2.0.0"
   },
