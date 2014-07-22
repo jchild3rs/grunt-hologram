@@ -25,8 +25,10 @@ In your project's Gruntfile, add a section named `hologram` to the data object p
 ```js
 grunt.initConfig({
   hologram: {
-    options: {
-      config: 'path/to/hologram/config.yml'
+    generate: {
+      options: {
+        config: 'path/to/hologram/config.yml'
+      }
     }
   },
 })
