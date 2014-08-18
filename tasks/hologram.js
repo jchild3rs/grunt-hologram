@@ -16,9 +16,10 @@ module.exports = function (grunt) {
 
     var options = this.options();
     var configPath;
+    var cmd = options.bin || 'hologram';
 
     try {
-      which.sync('hologram');
+      grunt.file.isFile(cmd) || which.sync('hologram');
     } catch (err) {
       return grunt.warn(
         '\nYou need to have Hologram installed and in your PATH for this task to work.\n' +
@@ -41,7 +42,7 @@ module.exports = function (grunt) {
     }
 
     // Run hologram
-    var cp = spawn('hologram', [configPath], {stdio: 'inherit'});
+    var cp = spawn(cmd, [configPath], {stdio: 'inherit'});
 
     cp.on('error', function (err) {
       grunt.warn(err);
