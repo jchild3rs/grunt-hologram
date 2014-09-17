@@ -14,7 +14,7 @@ module.exports = function (grunt) {
 
   grunt.registerMultiTask('hologram', 'Generate Hologram style guides with Grunt', function () {
 
-    var done = grunt.async();
+    var done = this.async();
     var options = this.options();
     var configPath;
     var cmd = options.bin || 'hologram';
