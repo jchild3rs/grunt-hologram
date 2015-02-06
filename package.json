@@ -1,13 +1,12 @@
 {
   "name": "grunt-hologram",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Generate Hologram style guides with Grunt",
-  "repository": "git@github.com:jchild3rs/grunt-hologram.git",
-  "author": {
-    "name": "James Childers",
-    "email": "jchilders62@gmail.com",
-    "url": "http://www.jchilders.com"
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jchild3rs/grunt-hologram.git"
   },
+  "author": "James Childers <jchilders62@gmail.com> (http://www.jchilders.com)",
   "keywords": [
     "gruntplugin"
   ],
@@ -34,5 +33,13 @@
   },
   "scripts": {
     "test": "grunt test"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/jchild3rs/grunt-hologram/issues"
+  },
+  "homepage": "https://github.com/jchild3rs/grunt-hologram",
+  "directories": {
+    "test": "test"
+  },
+  "license": "ISC"
 }
