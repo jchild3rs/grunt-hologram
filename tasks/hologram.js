@@ -14,6 +14,7 @@ module.exports = function (grunt) {
 
   grunt.registerMultiTask('hologram', 'Generate Hologram style guides with Grunt', function () {
 
+    var done = this.async();
     var options = this.options();
     var configPath;
     var cmd = options.bin || 'hologram';
@@ -45,12 +46,14 @@ module.exports = function (grunt) {
     var cp = spawn(cmd, [configPath], {stdio: 'inherit'});
 
     cp.on('error', function (err) {
-      grunt.warn(err);
+      done(err);
     });
 
     cp.on('close', function (code) {
       if (code > 0) {
-        return grunt.warn('Exited with error code ' + code);
+        done(new Error('Exited with error code ' + code));
+      } else {
+        done();
       }
     });
 
